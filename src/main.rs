@@ -1,6 +1,7 @@
 use std::env;
 mod day01;
 mod day02;
+mod day03;
 
 fn main() {
     let args: Vec<String> = env::args().collect();
@@ -11,6 +12,8 @@ fn main() {
         "1" => day01::run(filename),
 
         "2" => day02::run(filename),
+
+        "3" => day03::run(filename),
 
         &_ => println!("Day {} not implemented!", day)
     }
